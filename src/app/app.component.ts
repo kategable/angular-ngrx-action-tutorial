@@ -15,7 +15,7 @@ constructor(private store: Store<{ name: string }>) {
     this.name$ = store.pipe(select('name'));
   }
   updateName(){
-    this.store.dispatch(updateUserName("My Name is Kate Sky"));
+    this.store.dispatch(updateUserName({name: "My Name is Kate Sky"}));
   }
 }
 

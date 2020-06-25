@@ -7,7 +7,7 @@ import { updateUserName } from './user.actions';
 }
 
 export const initialState: GlobalState = {
-  name: null, 
+  name: 'test', 
 };
 
 const _userReducer = createReducer(initialState,
